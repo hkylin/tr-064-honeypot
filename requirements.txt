@@ -1,0 +1,6 @@
+bottle==0.12.7
+requests==2.4.1
+tftpy
+gevent-websocket
+gevent
+paste
