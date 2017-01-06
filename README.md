@@ -7,7 +7,7 @@ pip install virtualenv
 
 # Get the tr-064-honeypot source  
 cd /opt  
-git clone https://github.com/zoom3y3/tr-064-honeypot.git  
+git clone https://github.com/zom3y3/tr-064-honeypot.git  
 cd tr-064-honeypot  
 
 virtualenv env  
