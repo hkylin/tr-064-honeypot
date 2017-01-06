@@ -71,7 +71,7 @@ def child_sample_analysis(sample):
     if os.path.getsize(sample) < (1024*5):
         parent_file = open(sample, 'r')
         for line in parent_file.readlines():
-            download_url_match = re.search(r"((http|ftp|https)://)(([a-zA-Z0-9\._-]+\.[a-zA-Z]{2,6})|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,4})*(/[a-zA-Z0-9\&%_\./-~-]*)?", str(line))
+            download_url_match = re.search(r"((http|ftp|https)://)(([a-zA-Z0-9\._-]+\.[a-zA-Z]{2,6})|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,6})*(/[a-zA-Z0-9\&%_\./-~-]*)?", str(line))
             tftp_match = re.search(r"tftp [^;]*", str(line))
             if download_url_match and 'wget' in line:
                 download_url = download_url_match.group(0)
