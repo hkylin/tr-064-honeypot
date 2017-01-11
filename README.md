@@ -9,6 +9,7 @@ pip install virtualenv
 cd /opt  
 git clone https://github.com/zom3y3/tr-064-honeypot.git  
 cd tr-064-honeypot  
+mkdir sample  
 
 virtualenv env  
 . env/bin/activate  
